@@ -14,7 +14,7 @@ const Comment = ({ comment, getData }) => {
     try {
       if (c_nick === "admin" || c_nick === comment.c_nick) {
         const response = await fetch(
-          `${process.env.REACT_APP_SERVERURL}/${comment.id}`,
+          `${process.env.REACT_APP_SERVERURL}/comments/${comment.id}`,
           {
             method: "DELETE",
           }
