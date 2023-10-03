@@ -10,13 +10,17 @@ const CommentBar = ({ getData, comment }) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary comment-bar">
+    <Navbar expand="lg" className="comment-bar1">
       <Container>
         <Navbar.Brand href="#home">SimpleComments</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         <Navbar.Collapse id="basic-navbar-nav"></Navbar.Collapse>
-        <Button onClick={() => setShowModal(true)} getData={getData}>
+        <Button
+          className="button"
+          onClick={() => setShowModal(true)}
+          getData={getData}
+        >
           Add comment
         </Button>
         {showModal && (

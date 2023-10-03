@@ -1,17 +1,3 @@
-/*const Pool = require("pg").Pool;
-require("dotenv").config(); //hold sensitive info
-
-
-
-const pool = new Pool({
-  user: "postgres",
-  password: "Sibir111",
-  host: "localhost",
-  port: 5432,
-  database: "mojProjekt",
-});
-
-module.exports = pool;*/
 const { Pool } = require("pg");
 
 const pool = new Pool({

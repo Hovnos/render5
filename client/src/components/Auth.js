@@ -56,14 +56,22 @@ const Auth = () => {
   };
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="nav2">
       {!authToken && (
         <Container fluid>
           <Nav className="me-auto">
-            <Nav.Link href="#link" onClick={() => setShowSignForm(true)}>
+            <Nav.Link
+              className="button"
+              href="#link"
+              onClick={() => setShowSignForm(true)}
+            >
               {showSignForm || showSignForm ? "" : "Sign In"}{" "}
             </Nav.Link>
-            <Nav.Link href="#link" onClick={() => setShowLoginForm(true)}>
+            <Nav.Link
+              className="button"
+              href="#link"
+              onClick={() => setShowLoginForm(true)}
+            >
               {showLoginForm || showSignForm ? "" : "Log In"}
             </Nav.Link>
           </Nav>

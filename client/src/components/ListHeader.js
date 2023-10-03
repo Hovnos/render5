@@ -6,7 +6,7 @@ import Auth from "./Auth";
 
 const ListHeader = () => {
   return (
-    <Navbar expand="lg" style={{ backgroundColor: "orange" }}>
+    <Navbar expand="lg" style={{ backgroundColor: "#f2b147" }}>
       <Container fluid>
         <Navbar.Brand href="#home">SimpleWebsite</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -19,7 +19,7 @@ const ListHeader = () => {
               <NavDropdown.Item href="/resumeSvk">SVK</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="/resume">xxx</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
 
             <Nav.Link href="/xxxk">xxx</Nav.Link>
           </Nav>
